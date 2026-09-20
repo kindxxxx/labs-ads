@@ -1,0 +1,37 @@
+# OS / IDE
+.DS_Store
+Thumbs.db
+Desktop.ini
+.cursor/
+.vscode/
+*.swp
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+
+# Secrets / local automation
+*_ej_*
+.ej*
+*.cookies
+credentials*
+secrets*
+
+# Screenshots / media dumps
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+ej_*.png
+ads_*.png
+
+# Temp
+*.log
+*.tmp
+/tmp/
