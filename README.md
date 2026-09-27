@@ -35,6 +35,24 @@ lab-03/       # следующие лабы — по тому же шаблон�
 | I | Doubly linked list |
 | J | Zoro and Seven Sword Style |
 
+## Lab 03 — ADS-Lab-03
+
+Бинарный поиск (A–K). Все решения на Python 3.10.
+
+| | Задача |
+|---|---|
+| A | Binary search |
+| B | Patchwork Staccato I |
+| C | Debugging |
+| D | Win me if you can! |
+| E | Patchwork Staccato II |
+| F | Robin Hood stealing the Gold |
+| G | Cutting the Ropes |
+| H | K-subarray |
+| I | Oshiete oshiete yo sono shikumi wo |
+| J | Jonathan the Farmer |
+| K | Snake |
+
 ## Как добавлять новую лабу
 
 1. Создай `lab-NN/`
