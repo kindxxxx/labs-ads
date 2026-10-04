@@ -1,0 +1,30 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "name": "paws",
+  "framework": null,
+  "installCommand": "npm install",
+  "buildCommand": "node build-config.cjs",
+  "outputDirectory": ".",
+  "rewrites": [
+    { "source": "/miniapp/:path*", "destination": "/api/miniapp/:path*" },
+    { "source": "/health", "destination": "/api/health" }
+  ],
+  "headers": [
+    {
+      "source": "/config.js",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }]
+    },
+    {
+      "source": "/app.js",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }]
+    },
+    {
+      "source": "/styles.css",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [{ "key": "X-Content-Type-Options", "value": "nosniff" }]
+    }
+  ]
+}

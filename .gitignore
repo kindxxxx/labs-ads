@@ -14,13 +14,24 @@ __pycache__/
 venv/
 .env
 .env.*
+!.env.example
+!**/.env.example
 
 # Secrets / local automation
 *_ej_*
 .ej*
 *.cookies
-credentials*
+/credentials
+/credentials.*
+/credentials_*
 secrets*
+
+# PAWS lab-service (local dev artifacts)
+lab-service/.env
+lab-service/storage/*.db
+lab-service/miniapp/node_modules/
+lab-service/miniapp/.vercel/
+lab-service/miniapp/config.local.js
 
 # Screenshots / media dumps
 *.png

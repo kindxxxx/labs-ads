@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+  <title>PAWS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=3" />
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="config.js"></script>
+  <script src="catalog.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header class="top">
+      <div class="brand">
+        <span class="brand__mark">🐾</span>
+        <span class="brand__name">PAWS</span>
+      </div>
+      <div class="user" id="user">
+        <span class="user__avatar" id="userAvatar">?</span>
+        <span class="user__name" id="userName">гость</span>
+      </div>
+    </header>
+
+    <div class="banner" id="banner" hidden></div>
+
+    <nav class="tabs" id="tabs">
+      <button class="tab is-active" data-view="catalog">КАТАЛОГ</button>
+      <button class="tab" data-view="orders">ЗАКАЗЫ <span class="tab__badge" id="ordersBadge" hidden>0</span></button>
+    </nav>
+
+    <main>
+      <section class="view" id="view-catalog">
+        <div class="subjects" id="subjects"></div>
+        <div id="access"></div>
+        <div class="labs" id="labs"></div>
+      </section>
+
+      <section class="view" id="view-orders" hidden>
+        <div class="orders" id="orders"></div>
+      </section>
+    </main>
+
+    <div class="cartbar" id="cartbar" hidden>
+      <div class="cartbar__info">
+        <span class="cartbar__count" id="cartCount">0 ЛАБ</span>
+        <span class="cartbar__total" id="cartTotal">0 ₸</span>
+      </div>
+      <button class="btn btn--primary" id="checkoutBtn">ОФОРМИТЬ →</button>
+    </div>
+  </div>
+
+  <div class="sheet" id="sheet" hidden>
+    <div class="sheet__backdrop" data-close></div>
+    <div class="sheet__panel">
+      <div class="sheet__handle"></div>
+      <div id="sheetBody"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" hidden></div>
+
+  <script src="app.js?v=3"></script>
+</body>
+</html>
