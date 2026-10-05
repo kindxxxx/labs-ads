@@ -35,6 +35,12 @@ lab-service/miniapp/config.local.js
 
 # Screenshots / media dumps
 *.png
+!lab-04/screenshots/*.png
+lab-04/_*/
+lab-04/statements/
+lab-04/*.html
+lab-04/_*.py
+!lab-04/submit.py
 *.jpg
 *.jpeg
 *.gif
